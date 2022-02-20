@@ -3,11 +3,13 @@ import { BrowserRouter, Route, Link, Routes } from 'react-router-dom'
 import './App.css';
 import HomeScreen from './Screens/HomeScreen';
 import ProductScreen from './Screens/ProductScreen';
+import CartScreen from './Screens/CartScreen';
 
 function App() {
   return (
     
     <BrowserRouter>
+
       <div className="grid-container">
         <header className="header">
           <div className="brand"> 
@@ -18,6 +20,7 @@ function App() {
         <main className="main">
           <div className="content">
             <Routes>
+            <Route path="/cart/:id/:qty" element={<CartScreen />} />
              <Route path="/" exact={true} element={<HomeScreen />}/>
              <Route path="/product/:id" element={<ProductScreen />} />
 </Routes>

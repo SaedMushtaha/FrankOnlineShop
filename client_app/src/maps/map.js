@@ -12,8 +12,8 @@ function MyComponent() {
   })
 
   const containerStyle = {
-    width: '400px',
-    height: '400px'
+    width: '600px',
+    height: '250px'
   };
   
   const center = {
