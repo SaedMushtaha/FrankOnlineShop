@@ -24,6 +24,11 @@ namespace FrankShop.Controllers
             return Ok(await _repo.GetVehiclesAsync());
         }
 
+        [HttpGet("Vehicle/{id}")]
+        public async Task<ActionResult<Vehicle>> GetVehicle(int id)
+        {
+            return await _repo.GetVehicleByIdAsync(id);
+        }
 
     }
 }

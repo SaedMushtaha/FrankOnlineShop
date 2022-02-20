@@ -6,7 +6,9 @@ namespace Repository.IRepository
 {
   public interface IWareHouseRepository
     {   
-        Task<IReadOnlyList<Vehicle>> GetVehiclesAsync();
 
+        Task<IReadOnlyList<Vehicle>> GetVehiclesAsync();
+        Task<Vehicle> GetVehicleByIdAsync(int id);
+        
     }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Link, Routes } from 'react-router-dom'
 import './App.css';
 import HomeScreen from './Screens/HomeScreen';
+import ProductScreen from './Screens/ProductScreen';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <div className="content">
             <Routes>
              <Route path="/" exact={true} element={<HomeScreen />}/>
+             <Route path="/product/:id" element={<ProductScreen />} />
 </Routes>
 
           </div>
