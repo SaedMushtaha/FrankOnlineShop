@@ -13,6 +13,10 @@ Including Front-End and Back-End code
 ```sh
 version 17.0.2 
 ```
+-  NPM Packages Used:
+```sh
+js-cookie @3.0.1, axios, react-google-maps/api, redux, react-redux, react-router-dom, redux-thunk
+```
 
 ### Back-End
 - [ASP.NET Core] - C#, Entity Frame Work, Web API.
@@ -58,7 +62,7 @@ version 17.0.2
 [![env](https://hadeef.com/saedmushtaha/env%20change.png "env")](https://hadeef.com/saedmushtaha/env%20change.png "env")
 [![](https://hadeef.com/saedmushtaha/envc.png)](https://hadeef.com/saedmushtaha/envc.png)
 
-3. Install the dependencies and the npm packages and start the server and run the app.
+3. Install the dependencies and the npm packages then start the server and run the app.
 
 ```sh
 cd client_app
