@@ -40,15 +40,19 @@ js-cookie @3.0.1, axios, react-google-maps/api, redux, react-redux, react-router
 
 [![](https://hadeef.com/saedmushtaha/connection.png)](https://hadeef.com/saedmushtaha/connection.png)
 
-5. To Allow Cors policy for the client app Put your client app server url in startup.cs in FrankShop project.
-####FrankShop Project (Startup.cs)
-         services.AddCors(opt =>
+5. To Allow Cors policy for the client app Put your client app server url in startup.cs file in FrankShop project.
+
+````
+```
+     services.AddCors(opt =>
             {
                 opt.AddPolicy("CorsPolicy", policy =>
                 {
                     policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("PUT_SERVER_URL_HERE");
                 });
             });
+```
+````
 
 [![](https://hadeef.com/saedmushtaha/ooo.png)](https://hadeef.com/saedmushtaha/ooo.png)
 
