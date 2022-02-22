@@ -17,8 +17,8 @@ function MyComponent() {
   };
   
   const center = {
-    lat: product.lat,
-    lng: product.long
+    lat: Number(product.lat),
+    lng: Number(product.long)
   };
 
   const [map, setMap] = React.useState(null)
